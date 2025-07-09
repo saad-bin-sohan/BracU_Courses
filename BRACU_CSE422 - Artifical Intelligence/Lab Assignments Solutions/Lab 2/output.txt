@@ -1,0 +1,6 @@
+001100010
+0
+Result for part 2
+Parent 1: 001100010
+Parent 2: 010001010
+So the two resultant offsprings are, 001100010 & 010001010
