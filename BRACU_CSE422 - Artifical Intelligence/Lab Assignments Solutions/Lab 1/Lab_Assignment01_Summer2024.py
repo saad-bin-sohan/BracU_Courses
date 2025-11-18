@@ -1,6 +1,6 @@
 import heapq
 
-inp_txt_file = open("/Users/sohan/Downloads/Education/BRACU Summer 2024/CSE422/422 labs/Lab 1/Assignment 1 (A*)/22101704_Sk Md Saad Bin Sohan_CSE422_06_Lab_Assignment01_InputFile_Summer2024.txt", 'r')
+inp_txt_file = open("/Users/sohan/Downloads/Education/BRACU Summer 2024/CSE422/422 labs/Lab 1/Assignment 1 (A*)/221___ID_Sk Md Saad Bin Sohan_CSE422_06_Lab_Assignment01_InputFile_Summer2024.txt", 'r')
 temp_list = inp_txt_file.readlines( )
 inp_lines = [ ]
 
