@@ -1,0 +1,24 @@
+Task 1a:
+
+By cycle() function we check if there is any cycle. We use Kahn's algorithm in cycle() to find the topological order.
+If ther len() == no. of vertex, then it has a topological order. Thus we call DFS() function to get the complete order.
+DFS() traversed the graph recursively and in every back track I added the nodes in a list, which is the resultant list.
+
+
+Task 1b:
+
+Here we found the indegree of every vertex at first. Then we add all the 0 indegree nodes in a queue. Then we use BFS()
+on the node by poping Queue and each visited node decreases in indegree by 1. If any node's indegree becomes 0 we push
+it in Queue again. We continue the process untill the Queue is empty.
+
+
+Task 2:
+
+Here I modified the code from Task 1b. Before popping the Queue. I sorted the Queue in ascending order. For this the
+Order will always be in lexicographical form.
+
+Task 3:
+
+
+Here I first made the topological sort of the graph. Then made a Transpose of the graph. After this, I ran DFS() on the
+transposed graph by popping the stack of the topological sort.

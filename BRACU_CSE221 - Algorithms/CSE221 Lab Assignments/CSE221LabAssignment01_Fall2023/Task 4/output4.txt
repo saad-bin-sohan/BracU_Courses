@@ -1,0 +1,13 @@
+ABC will departure for Dhaka is 17:30
+ABC will departure for Barisal is 03:00
+ABC will departure for Khulna is 03:00
+ABCD will departure for Chittagong is 01:00
+ABCD will departure for Mymensingh is 00:30
+ABCE will departure for Sylhet is 23:05
+DhumketuExpress will departure for Chittagong is 02:30
+PadmaExpress will departure for Chittagong is 20:30
+PadmaExpress will departure for Dhaka is 19:30
+ShonarBangla will departure for Dhaka is 12:30
+SubornoExpress will departure for Chittagong is 14:30
+SubornoExpress will departure for Rajshahi is 14:30
+SubornoExpress will departure for Dhaka is 11:30

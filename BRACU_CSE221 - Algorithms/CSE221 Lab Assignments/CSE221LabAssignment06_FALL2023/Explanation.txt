@@ -1,0 +1,8 @@
+Task 1:
+In task 1, I used the algorithm of Dijkstra to get the shortest path from a given graph. It's a greedy algorithm and chooses the minimum weighted path from all branches. It uses the BFS algorithm to work. So, I used this algorithm in my code to find the shortest path. first I made a dictionary from the given vertex information as input and used the Dijkstra on it.
+
+Task 2: 
+In task 2, I again used the Dijkstra algorithm. As the question said, they were in a hurry to meet each other, so I used the shortest-path greedy algorithm. They will choose the minimum weighted path from all the paths (neighbours). So I used the Dijkstra algorithm on the dictionary which contained all the information of the graph. In the code, I just added two extra variables to store the common node where they can reach and time will show the maximum time to reach at the common node from the times they take individually to reach that node.
+
+Task 3:
+In task 3, I used the concept of the Dijkstra algorithm to find the safest path among all the given paths. I made a dictionary using all the information given and counted the danger of all the paths. Then extracted the minimum of them and showed it as the output.
