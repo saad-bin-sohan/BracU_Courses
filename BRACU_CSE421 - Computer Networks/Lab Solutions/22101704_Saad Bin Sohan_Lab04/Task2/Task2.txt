@@ -1,0 +1,35 @@
+R2>en
+R2#conf t
+Enter configuration commands, one per line.  End with CNTL/Z.
+R2(config)#ip access-list standard R2NAT
+R2(config-std-nacl)#permit 192.168.10.0 0.0.0.255
+R2(config-std-nacl)#permit 192.168.20.0 0.0.0.255
+R2(config-std-nacl)#permit 192.168.30.0 0.0.0.255
+R2(config-std-nacl)#ip nat pool R2POOL 209.165.202.129 209.165.202.129 netmask 255.255.255.252
+R2(config)#ip nat inside source list R2NAT pool R2POOL overload
+R2(config)#int fa0/0
+R2(config-if)#ip nat inside
+R2(config-if)#exit
+R2(config)#int se0/0/0
+R2(config-if)#ip nat inside
+R2(config-if)#exit
+R2(config)#int se0/0/1
+R2(config-if)#ip nat inside
+R2(config-if)#exit
+R2(config)#int se0/1/0
+R2(config-if)#ip nat outside
+R2(config-if)#exit
+R2(config)#ip nat inside source 192.168.20.254 209.165.202.130
+                                ^
+% Invalid input detected at '^' marker.
+	
+R2(config)#ip nat inside source static 192.168.20.254 209.165.202.130
+R2(config)#
+R2(config)#exit
+R2#
+%SYS-5-CONFIG_I: Configured from console by console
+
+R2#show ip nat translations
+Pro  Inside global     Inside local       Outside local      Outside global
+---  209.165.202.130   192.168.20.254     ---                ---
+tcp 209.165.202.129:1025192.168.10.10:1025 209.165.201.30:80  209.165.201.30:80

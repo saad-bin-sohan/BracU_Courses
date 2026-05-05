@@ -1,0 +1,9 @@
+R1>en
+R1#conf
+Configuring from terminal, memory, or network [terminal]? 
+Enter configuration commands, one per line.  End with CNTL/Z.
+R1(config)#int g0/0
+R1(config-if)#ip helper-address 192.168.60.253
+R1(config-if)#
+R1#
+%SYS-5-CONFIG_I: Configured from console by console
